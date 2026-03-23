@@ -1,0 +1,26 @@
+[project]
+name = "numpyword2vec"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mystic98", email = "iantonov.zhenya@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=4.8.3",
+    "numpy>=2.4.3",
+]
+
+[project.scripts]
+numpyword2vec = "numpyword2vec:main"
+
+[build-system]
+requires = ["uv_build>=0.9.27,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+]
